@@ -1,100 +1,113 @@
-# CineWatch: A Personal Watchlist Manager
 
-CineWatch is a secure and user-friendly web application that allows users to create accounts and manage their movie watchlists. Each user's data is private and secure, enabling them to perform full CRUD (Create, Read, Update, Delete) operations on their unique movie collections.
+# WatchList - A Personal Media Tracker
 
-## Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Overview
+
+Welcome to **WatchList**, a sophisticated web application that allows users to create accounts and manage their personal media watchlists. Users can perform CRUD (Create, Read, Update, Delete) operations on their watchlists, ensuring a secure and private experience. Each user has a unique watchlist that holds their media preferences, offering a tailored experience.
+
 
 ## Features
-- **User Authentication:** Create accounts and log in securely.
-- **Personalized Watchlists:** Each user has their own watchlist, ensuring data privacy.
-- **CRUD Operations:** Add, view, edit, and delete movies from your watchlist.
-- **Responsive Design:** Optimized for both desktop and mobile users.
-- **Secure Data Management:** Ensures that user data is private and protected.
+
+- **User Authentication**: Secure account creation and login system.
+- **Personal Watchlist**: Each user can create and manage their own watchlist.
+- **CRUD Operations**: Add, edit, and delete items from your watchlist effortlessly.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Data Privacy**: All user data is securely stored, ensuring privacy.
 
 ## Tech Stack
-- **Frontend:** React, Axios, Tailwind CSS
-- **Backend:** Node.js, Express.js, MongoDB
-- **Authentication:** JSON Web Tokens (JWT)
-- **Deployment:** (Mention any deployment platforms if applicable)
+
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Hosting**: (Specify where you plan to host the app)
 
 ## Installation
 
 ### Prerequisites
-- Node.js and npm installed on your machine.
-- MongoDB database (locally or on a cloud provider like MongoDB Atlas).
 
-### Steps to Set Up Locally
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/CineWatch.git
-   cd CineWatch
-   ```
+Ensure you have the following installed:
 
-2. **Set up the server:**
-   ```bash
-   cd server
-   npm install
-   ```
+- Node.js
+- npm
+- MongoDB (or any other database service)
 
-   - Create a `.env` file in the `server` directory with the necessary environment variables:
-     ```plaintext
-     PORT=4000
-     MONGODB_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     ```
+### Clone the Repository
 
-3. **Set up the client:**
-   ```bash
-   cd ../client
-   npm install
-   ```
+```bash
+git clone https://github.com/umerzzz/watchlist.git
+cd watchlist
+```
 
-4. **Run the application:**
-   - **Start the server:**
-     ```bash
-     cd server
-     npm start
-     ```
+### Client Setup
 
-   - **Start the client:**
-     ```bash
-     cd ../client
-     npm start
-     ```
+Navigate to the client folder and install dependencies:
 
-   The application should now be running on `http://localhost:3000`.
+```bash
+cd client
+npm install
+```
+
+### Server Setup
+
+Navigate to the server folder and install dependencies:
+
+```bash
+cd ../server
+npm install
+```
+
+### Configuration
+
+1. Create a `.env` file in the **server** directory and add the necessary environment variables (e.g., database URI, JWT secret).
+2. Make sure to set up your MongoDB database and connect it using the URI in your `.env` file.
+
+### Run the Application
+
+1. Start the server:
+
+```bash
+cd server
+npm start
+```
+
+2. In a new terminal, build and start the client:
+
+```bash
+cd client
+npm run build
+npm start
+```
 
 ## Usage
-1. **Register an account:** Navigate to the registration page and create a new account.
-2. **Log in:** Use your credentials to log in to your account.
-3. **Manage your watchlist:** Add movies to your watchlist, edit details, or delete movies as needed.
-4. **Log out:** Ensure your session is secure by logging out when finished.
+
+Once the application is running, you can navigate to `http://localhost:5173` in your web browser. Here, you can create an account, log in, and manage your media watchlist.
 
 ## Contributing
-Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+
+Contributions are welcome! If you have suggestions or improvements, feel free to create an issue or submit a pull request.
+
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-**Enjoy using CineWatch!** If you have any questions or feedback, feel free to open an issue or reach out to the maintainers.
+## Contact
+
+For any questions or feedback, please reach out to me:
+
+- **GitHub**: [umerzzz](https://github.com/umerzzz)
+
+Happy coding!
 ```
 
-### How to Use This Template
-- Replace placeholders like `yourusername`, `your_mongodb_connection_string`, and `your_jwt_secret` with your actual values.
-- Modify sections to better fit your specific project needs.
-- Add or remove features as necessary based on the final functionalities of your application.
-
-Feel free to ask if you need any additional sections or modifications!
+### Customization Notes:
+- Replace `path_to_your_screenshot` with an actual screenshot of your application.
+- Add more details in the **Usage** and **Installation** sections as necessary.
+- Adjust the **License** section if you're using a different license.
+- Feel free to enhance sections like **Features** and **Tech Stack** with additional information.
